@@ -1,0 +1,12 @@
+1. First docker build .
+2. docker-compose build
+3. docker-compose run app sh -c "django-admin.py startproject app ."
+4. docker-compose run app sh -c "python manage.py test"
+5. docker-compose run app sh -c "python manage.py test && flake8"
+6. docker-compose run app sh -c "python manage.py startapp core"
+7. docker-compose run app sh -c "python manage.py makemigrations core" 
+8. sudo docker-compose up
+9. http://127.0.0.1:8000/admin
+10. docker-compose run app sh -c "python manage.py createsuperuser"  ------->   ed@gmail.com    ->  thisissafe
+11. docker-compose run --rm app sh -c "python manage.py startapp user"
+12. docker-compose run app sh -c "python manage.py makemigrations" 
