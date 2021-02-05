@@ -30,11 +30,6 @@ SECRET_KEY = 'v7kq+2)p5)$*i0k8aqzd_du-3=32jf@m8oapwjrr&(fg%!82r#'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-ENGINE': 'django.db.backends.postgresql',
-        'HOST': os.environ.get('DB_HOST'),
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASS'),
 
 # Application definition
 
